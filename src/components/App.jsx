@@ -41,21 +41,6 @@ export const App = () => {
     setFilter('');
   };
 
-  // componentDidMount() {
-  //   const startContacts = JSON.parse(localStorage.getItem('contacts'));
-
-  //   if (startContacts) {
-  //     this.setState({ contacts: startContacts });
-  //   }
-  // }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (this.state.contacts !== prevState.contacs) {
-  //     localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
-  //   }
-  // }
-
-  // const { contacts } = this.state;
   let filterSearch = contacts;
 
   if (filter !== '') {
@@ -72,5 +57,3 @@ export const App = () => {
     </div>
   );
 };
-
-//
